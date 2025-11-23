@@ -1,0 +1,13 @@
+dataset:
+  name: ocean_das
+  pair_id: [8]
+model:
+  POD_modes: 3
+  alpha: 20.0
+  differentiation_method: finite_difference
+  differentiation_method_order: 2
+  feature_library: polynomial
+  feature_library_order: 1
+  name: SINDy
+  optimizer: FROLS
+  threshold: 30.0
