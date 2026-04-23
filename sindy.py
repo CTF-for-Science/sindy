@@ -177,7 +177,7 @@ class SINDy:
         return output_train_data, output_init_data
 
 
-    def fit_model(self, train_data: List[np.ndarray]) -> ps.pysindy.SINDy:
+    def fit_model(self, train_data: List[np.ndarray]) -> ps.SINDy:
         """
         Fit the model on the training data.
 
@@ -185,7 +185,7 @@ class SINDy:
             train_data List[np.ndarray]: Training data.
 
         Returns:
-            ps.pysindy.SINDy: SINDy model.
+            ps.SINDy: SINDy model.
         """
                 
         multiple_trajectories = False if self.pair_id < 8 else True
