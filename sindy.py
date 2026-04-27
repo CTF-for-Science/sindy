@@ -62,7 +62,7 @@ class SINDy:
         else: # Forecasting task
             self.init_data = train_data[0][-1,:]
 
-        self.reduction = False if config['dataset']['name'] == 'ODE_Lorenz' else True 
+        self.reduction = False if self.n <= config['model']['POD_modes'] else True 
         self.POD_modes = config['model']['POD_modes']
 
         self.prediction_timesteps = prediction_timesteps
