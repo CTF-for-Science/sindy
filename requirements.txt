@@ -1,4 +1,3 @@
 # pip install pysindy
-pysindy=1.7.5
-numpy=1.23.5
-python=3.10.16
+pysindy==1.7.5
+numpy
